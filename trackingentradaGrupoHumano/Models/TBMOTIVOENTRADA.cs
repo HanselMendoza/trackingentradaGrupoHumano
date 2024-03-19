@@ -11,7 +11,8 @@ namespace trackingentradaGrupoHumano.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class TBMOTIVOENTRADA
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,11 +22,14 @@ namespace trackingentradaGrupoHumano.Models
         }
     
         public int IDMOTIVOENTRADA { get; set; }
+        [DisplayName("Estado")]
         public Nullable<int> IDESTADO { get; set; }
+        [DisplayName("Motivo de entrada")]
         public string DESCRIPCION { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBENTRADA> TBENTRADAs { get; set; }
+        [DisplayName("Estado")]
         public virtual TBESTADO TBESTADO { get; set; }
     }
 }

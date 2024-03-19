@@ -46,7 +46,7 @@ namespace trackingentradaGrupoHumano.Controllers
             ViewBag.IDMOTIVOENTRADA = new SelectList(db.TBMOTIVOENTRADAs, "IDMOTIVOENTRADA", "DESCRIPCION");
             ViewBag.IDOCUPACION = new SelectList(db.TBOCUPACIONs, "IDOCUPACION", "NOMBRE");
             ViewBag.Localidad = new SelectList(db.tblocalidads, "id", "descripcion");
-            ViewBag.IDOCUPACION = new SelectList(db.CONFIGURACIONs, "ID", "DESCRIPCION");
+            ViewBag.IDOCUPACION = new SelectList(db.TBOCUPACIONs, "IDOCUPACION", "NOMBRE");
             ViewBag.COORDENADA = new SelectList(db.TBCOORDENADAs, "IDCOORDENADA", "NOMBRE");
             ViewBag.PISO = new SelectList(db.TBPISOes, "IDPISO", "NOMBRE");
             ViewBag.EstadoSolicitud = new SelectList(db.estadoes, "id", "descripcion");
@@ -74,7 +74,7 @@ namespace trackingentradaGrupoHumano.Controllers
             ViewBag.IDMOTIVOENTRADA = new SelectList(db.TBMOTIVOENTRADAs, "IDMOTIVOENTRADA", "DESCRIPCION", tBENTRADA.IDMOTIVOENTRADA);
             ViewBag.IDOCUPACION = new SelectList(db.TBOCUPACIONs, "IDOCUPACION", "NOMBRE", tBENTRADA.IDOCUPACION);
             ViewBag.Localidad = new SelectList(db.tblocalidads, "id", "descripcion", tBENTRADA.Localidad);
-            ViewBag.IDOCUPACION = new SelectList(db.CONFIGURACIONs, "ID", "DESCRIPCION", tBENTRADA.IDOCUPACION);
+            ViewBag.IDOCUPACION = new SelectList(db.TBOCUPACIONs, "IDOCUPACION", "NOMBRE");
             ViewBag.COORDENADA = new SelectList(db.TBCOORDENADAs, "IDCOORDENADA", "NOMBRE", tBENTRADA.COORDENADA);
             ViewBag.PISO = new SelectList(db.TBPISOes, "IDPISO", "NOMBRE", tBENTRADA.PISO);
             ViewBag.EstadoSolicitud = new SelectList(db.estadoes, "id", "descripcion", tBENTRADA.EstadoSolicitud);

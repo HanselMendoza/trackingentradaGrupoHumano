@@ -11,27 +11,42 @@ namespace trackingentradaGrupoHumano.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class TBENTRADA
     {
         public int IDENTRADA { get; set; }
         public Nullable<int> IDDEPART { get; set; }
         public Nullable<int> IDOCUPACION { get; set; }
         public Nullable<int> IDMOTIVOENTRADA { get; set; }
+
+        [DisplayName("Cédula")]
         public string CEDULA { get; set; }
+        [DisplayName("Nombre del visitante")]
         public string NOMBRES { get; set; }
+        [DisplayName("Apellido del visitante")]
         public string APELLIDOS { get; set; }
+        [DisplayName("Fecha de entrada del visitante")]
         public Nullable<System.DateTime> FECHAENTRADA { get; set; }
+        [DisplayName("Tiempo estimado")]
         public string TiempoESTIMADO { get; set; }
+        [DisplayName("¿Cita preía?")]
         public Nullable<int> TENIACITA { get; set; }
+        [DisplayName("Accedió a la localidad?")]
         public Nullable<int> Entro { get; set; }
         public Nullable<int> Localidad { get; set; }
         public Nullable<int> vpresidencial { get; set; }
+        [DisplayName("Nivel")]
         public Nullable<int> PISO { get; set; }
+        [DisplayName("Ubicación")]
         public Nullable<int> COORDENADA { get; set; }
+        [DisplayName("Código del empleado anfitrión")]
         public Nullable<int> codigoempleado { get; set; }
+        [DisplayName("Nombre del anfitrión")]
         public string NombreAnfitrion { get; set; }
+        [DisplayName("Hora de entrada")]
         public string HORAENTRADA { get; set; }
+        [DisplayName("Hora de salida")]
         public string HORASALIDA { get; set; }
         public Nullable<int> EstadoSolicitud { get; set; }
     
@@ -41,6 +56,7 @@ namespace trackingentradaGrupoHumano.Models
         public virtual TBDEPARTAMENTO TBDEPARTAMENTO { get; set; }
         public virtual TBMOTIVOENTRADA TBMOTIVOENTRADA { get; set; }
         public virtual TBOCUPACION TBOCUPACION { get; set; }
+        [DisplayName("Localidad")]
         public virtual tblocalidad tblocalidad { get; set; }
         public virtual CONFIGURACION CONFIGURACION3 { get; set; }
         public virtual TBCOORDENADA TBCOORDENADA { get; set; }

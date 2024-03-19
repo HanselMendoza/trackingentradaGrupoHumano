@@ -143,6 +143,8 @@
     <Compile Include="Controllers\TBENTRADAsController.cs" />
     <Compile Include="Controllers\TBENTRADAskioskoController.cs" />
     <Compile Include="Controllers\TBENTRADAuserController.cs" />
+    <Compile Include="Controllers\tblocalidadsController.cs" />
+    <Compile Include="Controllers\TBMOTIVOENTRADAsController.cs" />
     <Compile Include="Controllers\TBPERSONAsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -208,6 +210,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <None Include="DOCKERFILE" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -231,7 +234,9 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\registry.hub.docker.com_HANSELmENDOZA.pubxml" />
+    <None Include="Properties\PublishProfiles\registry.hub.docker.com_HANSELmENDOZA1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -285,6 +290,16 @@
     <Content Include="Views\TBENTRADAskiosko\Details.cshtml" />
     <Content Include="Views\TBENTRADAskiosko\Edit.cshtml" />
     <Content Include="Views\TBENTRADAskiosko\Index.cshtml" />
+    <Content Include="Views\tblocalidads\Create.cshtml" />
+    <Content Include="Views\tblocalidads\Delete.cshtml" />
+    <Content Include="Views\tblocalidads\Details.cshtml" />
+    <Content Include="Views\tblocalidads\Edit.cshtml" />
+    <Content Include="Views\tblocalidads\Index.cshtml" />
+    <Content Include="Views\TBMOTIVOENTRADAs\Create.cshtml" />
+    <Content Include="Views\TBMOTIVOENTRADAs\Delete.cshtml" />
+    <Content Include="Views\TBMOTIVOENTRADAs\Details.cshtml" />
+    <Content Include="Views\TBMOTIVOENTRADAs\Edit.cshtml" />
+    <Content Include="Views\TBMOTIVOENTRADAs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
